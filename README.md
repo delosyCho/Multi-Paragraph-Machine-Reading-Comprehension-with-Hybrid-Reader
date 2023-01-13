@@ -1,6 +1,6 @@
 # Multi Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text
 
----
+File Directory
 
 ```bash
 ├── BigBird
@@ -20,3 +20,16 @@
 └──  pretrain
     └── BERT_pretrain_adapter.py
 ``` 
+---
+## Model Arcitecture
+### Architecture of (a) Separated Reader Model, (b) Our Hybrid Reader Model
+![image](https://user-images.githubusercontent.com/64192139/212304681-038ecba6-d8d9-48b2-88fd-95075c5f0a31.png)
+
+### Arcitecture of Hybrid Reader with projection
+![Picture4-1](https://user-images.githubusercontent.com/64192139/212303898-cfa2d7b7-fba4-4300-b549-80f2f3338f40.png)
+---
+## Data Preparation
+KorQuAD 2.0 (https://korquad.github.io/)
+---
+## Requirements
+
