@@ -1,0 +1,17 @@
+dataclasses==0.8
+tensorboard==1.15.0
+tensorflow-estimator==1.15.1
+tensorflow-gpu==1.15.0
+tensorflow-probability==0.14.1
+transformers==4.15.0
+tqdm==4.60.0
+tokenizers==0.10.3
+torch==1.7.1
+regex==2021.11.10
+jsonschema==3.2.0
+ijson==3.1.4
+bs4==0.0.1
+six==1.15.0
+numpy==1.19.5
+scipy==1.5.4
+konlpy==0.5.2
