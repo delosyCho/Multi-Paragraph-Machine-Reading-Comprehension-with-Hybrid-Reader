@@ -1,5 +1,6 @@
 from utils.tokenization import BasicTokenizer, whitespace_tokenize
 
+import utils.Chuncker as Chuncker
 from utils.HTML_Utils import *
 import json
 import os
