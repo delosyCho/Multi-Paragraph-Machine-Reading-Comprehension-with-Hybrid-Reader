@@ -1,35 +1,25 @@
 from konlpy.tag import Mecab
-
-import modeling
+import utils.modeling as modeling
 import tensorflow as tf
 
-import DataHolder
+import utils.DataHolder as DataHolder
+from utils.utils import Fully_Connected
+import utils.optimization as optimization
+from utils.HTML_Utils import *
+import utils.Chuncker as Chuncker
+from utils.modeling import get_shape_list
 
-from utils import Fully_Connected
-
-import optimization
-
-import tokenization
+import numpy as np
+import utils.tokenization as tokenization
 from transformers import AutoTokenizer
-
-from HTML_Utils import *
 import os
 import json
+from utils.evaluate2 import f1_score, exact_match_score
+import utils.Ranking_ids as Ranking_ids
 
-from evaluate2 import f1_score
-from evaluate2 import exact_match_score
+from utils.HTML_Processor import process_document
+import utils.Table_Holder as Table_Holder
 
-import Chuncker
-import Name_Tagging
-import Ranking_ids
-
-from HTML_Processor import process_document
-import Table_Holder
-from modeling import get_shape_list
-
-import TAPAS_with_TMN2 as TAPAS_model
-
-import DataHolder_test
 
 table_holder = Table_Holder.Holder()
 chuncker = Chuncker.Chuncker()
