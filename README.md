@@ -31,7 +31,7 @@ File Directory
     ├── tokenization.py
     └── utils.py
 ``` 
----
+
 ## Model Arcitecture
 
 #### Architecture of (a) Separated Reader Model, (b) Our Hybrid Reader Model
@@ -39,10 +39,10 @@ File Directory
 
 #### Arcitecture of Hybrid Reader with projection
 ![Picture4-1](https://user-images.githubusercontent.com/64192139/212303898-cfa2d7b7-fba4-4300-b549-80f2f3338f40.png)
----
+
 ## Data Preparation
 - KorQuAD 2.0 (https://korquad.github.io/)
----
+
 ## Requirements
 
 Please install the following library requirements specified in the requirements.txt first.
