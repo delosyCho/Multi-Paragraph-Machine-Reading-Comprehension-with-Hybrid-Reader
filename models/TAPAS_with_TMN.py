@@ -1,32 +1,21 @@
-import modeling_tapas as modeling
-import tensorflow as tf
-
-import DataHolder as DataHolder2
-
-from utils import Fully_Connected
-
-import optimization
-
-import tokenization
+import utils.modeling_tapas as modeling
+import utils.DataHolder as DataHolder2
+from utils.utils import Fully_Connected
+import utils.optimization as optimization
+import utils.tokenization as tokenization
 from transformers import AutoTokenizer
+from utils.HTML_Utils import *
+from utils.evaluate2 import f1_score, exact_match_score
+import utils.Chuncker as Chuncker
+from utils.modeling import get_shape_list
+import utils.Ranking_ids as Ranking_ids
+from utils.HTML_Processor import process_document
+import utils.Table_Holder as Table_Holder
+from utils.modeling import create_attention_mask_from_input_mask
 
-from HTML_Utils import *
 import os
 import json
-
-from evaluate2 import f1_score
-from evaluate2 import exact_match_score
-
-import Chuncker
-import Name_Tagging
-import Ranking_ids
-
-from HTML_Processor import process_document
-import Table_Holder
-from modeling import get_shape_list
-from modeling import create_attention_mask_from_input_mask
-
-import DataHolder_test
+import tensorflow as tf
 
 table_holder = Table_Holder.Holder()
 chuncker = Chuncker.Chuncker()
