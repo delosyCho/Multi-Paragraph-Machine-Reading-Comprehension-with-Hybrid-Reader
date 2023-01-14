@@ -1,7 +1,7 @@
 # Multi Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text
 This is the official repo for **Multi Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text**, a manuscript of Heliyon.
 
-# Abstract
+## Abstract
 In machine reading comprehension, the answer to a question could be in a table or text. Previous studies proposed combining specialized models for each table and text. Instead, we propose a Hybrid Reader Model for both the table and text with a modified K-Adapter. In the K-Adapter, the adapters are trained in a distributed manner with their weights fixed in each pre-training stage. This training process infuses table knowledge into the pre-trained model while retaining their original weights from pre-training. With a modified K-Adapter and BERT as the backbone model, our Hybrid Reader Model performs better than the specialized model on the Korean MRC dataset KorQuad 2.0.
 
 ## Model Arcitecture
@@ -12,7 +12,7 @@ In machine reading comprehension, the answer to a question could be in a table o
 #### Arcitecture of Hybrid Reader with projection
 <center><img src="https://user-images.githubusercontent.com/64192139/212303898-cfa2d7b7-fba4-4300-b549-80f2f3338f40.png" width="70%" height="70%"></center>
 
-# File Directory
+## File Directory
 
 ```bash
 ├── BigBird
@@ -55,3 +55,5 @@ If you want to download all library at once, use this code.
 ```bash
 pip install -r requirements.txt
 ```
+
+## License
