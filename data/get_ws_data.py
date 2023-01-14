@@ -1,17 +1,14 @@
-from HTML_Utils import *
+from utils.HTML_Utils import *
 import json
 import os
-import re
-
 import numpy as np
 
-import Chuncker
+import utils.Chuncker as Chuncker
 
-import Table_Holder
-from Table_Holder import detect_num_word, detect_simple_num_word, get_space_of_num, get_space_num_lists
+import utils.Table_Holder as Table_Holder
+from utils.Table_Holder import detect_num_word, detect_simple_num_word, get_space_of_num, get_space_num_lists 
 
 from transformers import AutoTokenizer
-
 
 def RepresentsInt(s):
     try:
@@ -19,7 +16,6 @@ def RepresentsInt(s):
         return True
     except ValueError:
         return False
-
 
 pattern = '<[^>]*>'
 table_holder = Table_Holder.Holder()
