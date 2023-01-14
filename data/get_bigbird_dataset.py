@@ -1,17 +1,11 @@
-from tokenization import BasicTokenizer, whitespace_tokenize
-import random
+from utils.tokenization import BasicTokenizer, whitespace_tokenize
 
-from HTML_Utils import *
-import os
+from utils.HTML_Utils import *
 import json
 import os
 
-import tokenization
 import numpy as np
-
-import Chuncker
-
-from HTML_Processor import process_document
+from utils.HTML_Processor import process_document
 from transformers import AutoTokenizer
 
 from konlpy.tag import Mecab
@@ -21,7 +15,6 @@ import collections
 import re
 
 pattern = '<[^>]*>'
-
 
 def read_squad_example(orig_answer_text, answer_offset, paragraph_text):
     def is_whitespace(c):
