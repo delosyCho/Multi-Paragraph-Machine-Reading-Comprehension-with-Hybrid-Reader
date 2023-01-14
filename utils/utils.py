@@ -1,5 +1,5 @@
 import tensorflow as tf
-from layers_ import *
+from utils.layers_ import *
 
 
 def structured_sa_embedding(H, sequence_length, hidden_size, d_a_size, r_size, p_coef, name, fc_size=None, projection=False, reuse=False):
