@@ -17,8 +17,22 @@ File Directory
 │   ├── BERT_T_Adapter_Stage2.py
 │   ├── Dual_Encoder.py
 │   └── TAPAS_with_TMN.py
-└──  pretrain
-    └── BERT_pretrain_adapter.py
+├── pretrain
+│   └── BERT_pretrain_adapter.py
+└──  utils
+    ├── attention_utils.py
+    ├── Chuncker.py
+    ├── DataHolder.py
+    ├── DataHolder.py
+    ├── DataHolder_Pretrain.py
+    ├── DataHolder_test.py
+    ├── DataHolder2.py
+    ├── Table_Holder.py
+    ├── evalutate2.py
+    ├── HTML_*.py
+    ├── modeling_*.py
+    ├── tokenization.py
+    └── utils.py
 ``` 
 ---
 ## Model Arcitecture
