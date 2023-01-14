@@ -30,7 +30,6 @@ File Directory
 ![Picture4-1](https://user-images.githubusercontent.com/64192139/212303898-cfa2d7b7-fba4-4300-b549-80f2f3338f40.png)
 ---
 ## Data Preparation
-
 - KorQuAD 2.0 (https://korquad.github.io/)
 ---
 ## Requirements
