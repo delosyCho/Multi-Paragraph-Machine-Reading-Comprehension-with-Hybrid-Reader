@@ -1,43 +1,25 @@
-from transformers import AutoTokenizer
-
-import modeling
+import utils.modeling as modeling
 import tensorflow as tf
 
-import DataHolder_test
-import DataHolder as DataHolder2
-
-from utils import Fully_Connected
-from utils import Highway_Network_Fullyconnceted
+import utils.DataHolder2 as DataHolder2
+from utils.utils import Fully_Connected
+import utils.optimization as optimization
+from utils.HTML_Utils import *
+import utils.Chuncker as Chuncker
+from utils.modeling import get_shape_list
+from utils.attention_utils import compute_sparse_attention_mask
 
 import numpy as np
-
-import optimization
-
-import tokenization
+import utils.tokenization as tokenization
 from transformers import AutoTokenizer
-
-from HTML_Utils import *
 import os
 import json
+from utils.evaluate2 import f1_score, exact_match_score
+import utils.Ranking_ids as Ranking_ids
 
-from evaluate2 import f1_score
-from evaluate2 import exact_match_score
+from utils.HTML_Processor import process_document
+import utils.Table_Holder as Table_Holder
 
-import Chuncker
-import Name_Tagging
-import Ranking_ids
-
-from time import sleep
-from HTML_Processor import process_document
-import Table_Holder
-from modeling import get_shape_list
-
-from modeling import create_attention_mask_from_input_mask
-from attention_utils import compute_sparse_attention_mask
-
-import TAPAS_with_TMN2 as TAPAS_model
-
-import DataHolder_test
 
 table_holder = Table_Holder.Holder()
 chuncker = Chuncker.Chuncker()
