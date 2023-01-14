@@ -1,47 +1,17 @@
-from transformers import AutoTokenizer
-
-import modeling
+import utils.modeling as modeling
 import tensorflow as tf
 
-import DataHolder_test
-import DataHolder2 as DataHolder2
-
-from utils import Fully_Connected
-from utils import Highway_Network_Fullyconnceted
-
-import numpy as np
-
-import optimization
-
-import tokenization
-from transformers import AutoTokenizer
-
-from HTML_Utils import *
-import os
-import json
-
-from evaluate2 import f1_score
-from evaluate2 import exact_match_score
-
-import Chuncker
-import Name_Tagging
-import Ranking_ids
-
-from time import sleep
-from HTML_Processor import process_document
-import Table_Holder
-from modeling import get_shape_list
-
-from modeling import create_attention_mask_from_input_mask
-from attention_utils import compute_sparse_attention_mask
-
-import TAPAS_with_TMN2 as TAPAS_model
-
-import DataHolder_test
+import utils.DataHolder2 as DataHolder2
+from utils.utils import Fully_Connected
+import utils.optimization as optimization
+from utils.HTML_Utils import *
+import utils.Chuncker as Chuncker
+import utils.Table_Holder as Table_Holder
+from utils.modeling import get_shape_list
+from utils.attention_utils import compute_sparse_attention_mask
 
 table_holder = Table_Holder.Holder()
 chuncker = Chuncker.Chuncker()
-
 
 def embedding_postprocessor(input_tensor,
                             col_ids,
@@ -112,7 +82,6 @@ def embedding_postprocessor(input_tensor,
 
     return output
 
-
 def gelu(x):
     """Gaussian Error Linear Unit.
 
@@ -128,18 +97,15 @@ def gelu(x):
         (np.sqrt(2 / np.pi) * (x + 0.044715 * tf.pow(x, 3)))))
     return x * cdf
 
-
 def seq_length(sequence):
     used = tf.sign(tf.reduce_max(tf.abs(sequence), reduction_indices=2))
     length = tf.reduce_sum(used, reduction_indices=1)
     length = tf.cast(length, tf.int32)
     return length
 
-
 def create_initializer(initializer_range=0.02):
     """Creates a `truncated_normal_initializer` with the given range."""
     return tf.truncated_normal_initializer(stddev=initializer_range)
-
 
 def masked_softmax(logits, mask, dim):
     exp_mask = (1 - tf.cast(mask, 'float')) * (-1e30)  # -large where there's padding, 0 elsewhere
