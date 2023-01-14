@@ -12,7 +12,6 @@ In machine reading comprehension, the answer to a question could be in a table o
 #### Arcitecture of Hybrid Reader with projection
 <center><img src="https://user-images.githubusercontent.com/64192139/212303898-cfa2d7b7-fba4-4300-b549-80f2f3338f40.png" width="70%" height="70%"></center>
 
-
 # File Directory
 
 ```bash
