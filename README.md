@@ -35,6 +35,6 @@ File Directory
 ## Requirements
 
 Please install the following library requirements specified in the requirements.txt first.
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
