@@ -1,5 +1,5 @@
 # Multi Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text
-This is the official repo for **Multi Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text**, a manuscript of Heliyon.
+This is the official repo for **Multi Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text**
 
 ## Abstract
 In machine reading comprehension, the answer to a question could be in a table or text. Previous studies proposed combining specialized models for each table and text. Instead, we propose a Hybrid Reader Model for both the table and text with a modified K-Adapter. In the K-Adapter, the adapters are trained in a distributed manner with their weights fixed in each pre-training stage. This training process infuses table knowledge into the pre-trained model while retaining their original weights from pre-training. With a modified K-Adapter and BERT as the backbone model, our Hybrid Reader Model performs better than the specialized model on the Korean MRC dataset KorQuad 2.0.
