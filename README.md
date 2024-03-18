@@ -7,8 +7,8 @@ In machine reading comprehension, the answer to a question could be in a table o
 ## Model Arcitecture
 
 #### Architecture of (a) Separated Reader Model, (b) Our Hybrid Reader Model
-<center><img src=![image](https://github.com/delosyCho/Multi-Paragraph-Machine-Reading-Comprehension-with-Hybrid-Reader/assets/64192139/5b6c437a-b594-47e7-a7a5-1a5943b0fd1d)
- width="70%" height="70%"></center>
+<center><img src= ![Fig2](https://github.com/delosyCho/Multi-Paragraph-Machine-Reading-Comprehension-with-Hybrid-Reader/assets/64192139/28ffcaa9-564b-493c-91de-88653c7e99ea)
+width="70%" height="70%"></center>
 
 #### Arcitecture of Hybrid Reader with projection
 <center><img src="https://user-images.githubusercontent.com/64192139/212303898-cfa2d7b7-fba4-4300-b549-80f2f3338f40.png" width="70%" height="70%"></center>
