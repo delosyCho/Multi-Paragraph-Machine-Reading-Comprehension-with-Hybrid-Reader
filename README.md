@@ -31,6 +31,11 @@ In machine reading comprehension, the answer to a question could be in a table o
 │   └── TAPAS_with_TMN.py
 ├── pretrain
 │   └── BERT_pretrain_adapter.py
+├── pretrain
+│   ├── modeling_adapter.py
+│   ├── attention_utils.py
+│   ├── modelings.py
+│   └── trainer.py
 └──  utils
     ├── attention_utils.py
     ├── Chuncker.py
