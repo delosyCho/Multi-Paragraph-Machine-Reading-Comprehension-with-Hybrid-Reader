@@ -1,4 +1,4 @@
-![Fig2](https://github.com/delosyCho/Multi-Paragraph-Machine-Reading-Comprehension-with-Hybrid-Reader/assets/64192139/29a32aa8-b585-4829-ad17-e70c06a70ce0)# Multi Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text
+
 This is the official repo for **Multi Paragraph Machine Reading Comprehension with Hybrid Reader over Tables and Text**
 
 ## Abstract
@@ -7,6 +7,8 @@ In machine reading comprehension, the answer to a question could be in a table o
 ## Model Arcitecture
 
 #### Architecture of (a) Separated Reader Model, (b) Our Hybrid Reader Model
+<center><img src=![Fig2](https://github.com/delosyCho/Multi-Paragraph-Machine-Reading-Comprehension-with-Hybrid-Reader/assets/64192139/29a32aa8-b585-4829-ad17-e70c06a70ce0)
+ width="70%" height="70%"></center>
 
 #### Arcitecture of Hybrid Reader with projection
 <center><img src="https://user-images.githubusercontent.com/64192139/212303898-cfa2d7b7-fba4-4300-b549-80f2f3338f40.png" width="70%" height="70%"></center>
